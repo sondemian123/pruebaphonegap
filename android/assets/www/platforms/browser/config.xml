@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.fondoesperanza.somosfe" version="560000" versionCode="560000" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>Somos FE</name>
+    <description>
+        Fondo Esperanza
+    </description>
+    <gap:plugin name="cordova-custom-config" source="npm" />
+    <gap:plugin name="cordova-plugin-whitelist" source="npm" />
+    <gap:plugin name="cordova-plugin-camera" source="npm" />
+    <allow-navigation href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <icon src="icon.png" />
+    <icon platform="android" qualifier="ldpi" src="ldpi.png" />
+    <icon platform="android" qualifier="mdpi" src="mdpi.png" />
+    <icon platform="android" qualifier="hdpi" src="hdpi.png" />
+    <icon platform="android" qualifier="xhdpi" src="xhdpi.png" />
+    <icon platform="android" qualifier="xxhdpi" src="xxåhdpi.png" />
+    <icon platform="android" qualifier="xxxhdpi" src="xxxhdpi.png" />
+    <preference name="phonegap-version" value="cli-7.1.0" />
+</widget>

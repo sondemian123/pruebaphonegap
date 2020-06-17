@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="apple-touch-icon" sizes="57x57" href="dist/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="dist/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="dist/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="dist/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="dist/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="dist/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="dist/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="dist/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="dist/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="dist/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="dist/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="dist/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="dist/favicon-16x16.png">
+    <link rel="manifest" href="dist/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <title>Somos Fe | Fondo Esperanza</title>
+
+    <!-- CSS  -->
+    <link href="dist/css/materialfont.css" rel="stylesheet">
+    <link href="dist/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="dist/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900" rel="stylesheet">
+</head>
+<body>
+<!--Menu-->
+
+<nav class="white" role="navigation">
+    <div class="nav-wrapper container">
+        <ul id="nav-mobile" class="side-nav">
+            <li>
+					<span class="perfil-photo">
+						<!--img src="img/user-demo-perfil-2.jpg" class="responsive-img circle" id='user_photo'-->
+						<p id='nombre_usuario'></p>
+					</span>
+
+            </li>
+            <li><a href="perfil.html" id='perfil_link'><img  src="dist/img/perm_identity.png" class='newicon'> Perfil</a></li>
+            <!--li><a href="#"><img  src="dist/img/settings.png" class='newicon'> Cuenta</a></li-->
+            <li><a href="privacidad.html"><img  src="dist/img/vpn_key.png" class='newicon'> Privacidad</a></li>
+             <li><a href="logout.html"><img  src="dist/img/clear.png" class='newicon'> Cerrar Sesión</a></li> <li><a href="change_password.html"><img  src="dist/img/security.png" class='newicon'> Cambiar Clave</a></li>
+        </ul>
+        <div class="row">
+            <div class="col s2">
+                <p><a href="wall.html"><img src="dist/img/isotipo.png" class='toplogo'></a></p>
+            </div>
+            <div class="col s6">
+                <form action="search.html" method="get">
+                    <div class="input-field">
+                        <input id="search" type="search" placeholder="Buscar..." required name="q">
+                        <label class="label-icon" for="search"><img class="right" style="margin-top: 14px" src="dist/img/searchgreen.png"></label>
+                    </div>
+                </form>
+            </div>
+            <div class="col s2">
+                <!--a href="mensajes.html">
+                    <span class="new badge">4</span>
+                </a-->
+            </div>
+            <div class="col s2">
+                <a href="#" data-activates="nav-mobile" class="button-collapse right"><img  src="dist/img/menuwhite.png" style="margin-top: 4px"></a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<!--Content-->
+<div class="container">
+    <div class="row">
+        <div class="col s12 m12">
+            <h1>Publicar</h1>
+        </div>
+        <div class="col s12 m12 cancel_link right-align">
+            <a href="wall.html" class="close_link">Cancelar <span class="closer">×</span> </a>
+        </div>
+
+    </div>
+    <div class="section">
+        <!--   Icon Section   -->
+        <div class="row">
+            <!--<div class="col s12 m12 publish-service">
+                <span class="user-name">
+                    <div class="col s3 m3 zero-padding-l">
+                        <span class="user-photo">
+                            <img src="img/user-demo-4.png" class="responsive-img circle">
+                        </span>
+                    </div>
+                    <div class="col s9 m9 zero-padding-l">
+                        <h2>Daniela Muñoz</h2>
+                        <span class="region">
+                            <p>Villarica, Región de la Araucanía</p>
+                        </span>
+                    </div>
+                </span>
+            </div>-->
+            <div class="col s12 m12 publish-prod">
+                <form action="http://192.168.1.154:8000/rest/publish/" method="post" enctype="multipart/form-data"
+                      id="publish">
+                    <!--<input type='hidden' name='csrfmiddlewaretoken' value='dhX3dYySYyQVpiHmTWJPmj5vQdl4DV0K76wPa459mUeHmYF48MsxkuXLHolKETNF' />-->
+                    <input type="hidden" name="type" value="mensaje">
+                    <div class="input-field col s12 m12 zero-padding radios">
+                        <strong>¿Quieres vender o comprar algo?</strong>
+                        <br>
+                        <p>Puede ser un producto o un servicio.</p>
+                        <div class="input-field col s12 m12 zero-padding">
+                            <input name="type" type="radio" id="test2" class="with-gap" value="bazar"/>
+                            <label for="test2">Sí</label>
+
+                        </div>
+                        <div class="input-field col s12 m12 zero-padding">
+                            <input name="type" type="radio" id="test1" class="with-gap" value="mensaje"
+                            />
+                            <label for="test1">No, quiere contar algo</label>
+                            <br>
+                        </div>
+                        <br>&nbsp;
+                    </div>
+                    <!--<div class="input-field col s12 m12 zero-padding">-->
+
+                    <!--<input type="text" name="title" id="id_title" required placeholder="¡Ponle un buen título!"-->
+                    <!--class="validate" maxlength="200"/>-->
+                    <!--</div>-->
+                    <div class="input-field col s12 m12 zero-padding">
+
+
+                    </div>
+                    <div class="input-field col s12 m12 zero-padding hideatfirst">
+
+                    <textarea name="description" rows="10" id="id_description"
+                              placeholder="¿Qué quieres vender o comprar?"
+                              type="textarea" required cols="40" class="validate materialize-textarea">
+</textarea>
+                    </div>
+
+                    <span class="onlybazar">
+                    <div class="input-field col s12 m12 zero-padding">
+
+                        <input type="text" name="price" id="id_precio" placeholder="Precio" class="validate"
+                               maxlength="200"/>
+                    </div>
+
+                    <div class="input-field col s12 m12 zero-padding" id="category_container">
+
+
+                    </div>
+
+                        <div class="input-field col s12 m12 zero-padding">
+
+                        <input type="text" name="place" id="id_lugar" placeholder="Lugar, comuna o área"
+                               class="validate"
+                               maxlength="200"/>
+                    </div>
+
+                        <div class="input-field col s12 m12 zero-padding">
+
+                        <input type="text" name="contact" id="id_contacto"
+                               placeholder="Contacto (Teléfono, whatsapp, etc.)" class="validate"
+                               maxlength="200"/>
+                    </div>
+                        </span>
+
+                    <div class="col s7 m7 zero-padding-l hideatfirst">
+                        <br><br>
+                        <input type="file" accept="image/*">
+
+                        <!--<input type="button" name="image"  value="Take Photo Image Base64" id="takephoto"/>-->
+                        <!--<img src="" id="imageFile" height="200px" width="200px"/>-->
+                        <input type="file" name="image" class="inputfile" id="id_image"/>
+
+                        <label class="waves-effect waves-light btn-large orange"
+                               for="id_image">
+                            <i class="material-icons left">camera_enhance</i> Agrega una Foto!</label>
+                        <!--<a href="#" class="takepicture">Take Picture</a>-->
+                    </div>
+                    <div class="col s5 m5 zero-padding-l zero-padding-r hideatfirst">
+                        <br><br>
+                        <button class="waves-effect waves-light btn-large" type="submit" name="action">¡Publícalo!
+                        </button>
+                    </div>
+
+                </form>
+            </div>
+            <div class="col s12">
+                <div class="recover" id="message">
+
+                </div>
+            </div>
+            <div class="col s12 cancel_link right-align">
+                <br/>
+                <a href="wall.html" class="close_link">Cancelar <span class="closer">×</span> </a>
+
+                <!--<button onclick="capturePhotoWithData();">Capture Photo With Image Data</button>-->
+                <!--<br>-->
+                <button onclick="capturePhotoWithFile();">Saca una foto nueva</button>
+                <br>
+                <button onclick="getPhoto()">Elige una foto existente</button>
+                <br>
+
+
+                <img style="display:none;width:60px;height:60px;" id="smallImage" src=""/>
+                <img style="display:none;" id="largeImage" src=""/>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="bottom-nav">
+    <div class="section">
+        <div class="row">
+            <div class="col s3">
+                <a href="wall.html" class="inicio"></a>
+            </div>
+            <div class="col s3">
+                <a href="bazar.html" class="compra"></a>
+            </div>
+            <div class="col s3">
+                <a href="publicar.html" class="publicar active"></a>
+            </div>
+            <div class="col s3">
+                <a href="feedback.html" class="credito"></a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="spinner">
+    <img src="dist/img/spinner.png">
+</div>
+
+<!--  Scripts-->
+<script src="dist/js/jquery-2.1.1.min.js"></script>
+<script src="dist/js/materialize.js"></script>
+<script src="dist/js/init.js"></script>
+<script src="dist/js/jquery.form.min.js"></script>
+
+<script src="js/config.js"></script>
+<script src="js/basic.js"></script>
+<script src="js/publicar.js"></script>
+<script src="js/camera5.js"></script>
+<script src="cordova.js"></script>
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+    <meta name="description" content="">
+    <meta name="author" content="">	
+	<meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff"> 
+	<title>Somos Fe | Fondo Esperanza</title>
+
+  <!-- CSS  -->
+  <link href="dist/css/materialfont.css" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900" rel="stylesheet">
+</head>
+<body>
+<!--Menu-->
+	<nav class="white" role="navigation">
+		<div class="nav-wrapper container">
+			<ul id="nav-mobile" class="side-nav">
+				<li>
+					<span class="perfil-photo">
+						<!--img src="img/user-demo-perfil-2.jpg" class="responsive-img circle" id='user_photo'-->
+						<p id='nombre_usuario'></p>
+					</span>
+					
+				</li>
+				<li><a href="#"><img  src="dist/img/perm_identity.png" class='newicon'> Perfil</a></li>
+				<li><a href="#"><img  src="dist/img/settings.png" class='newicon'> Cuenta</a></li>
+				<li><a href="#"><img  src="dist/img/vpn_key.png" class='newicon'> Privacidad</a></li>
+				<li><a href="logout.html"><img  src="dist/img/clear.png" class='newicon'> Cerrar Sesión</a></li>
+			</ul>
+			<div class="row">
+				<div class="col s8">
+					<form action="search.html" method="get">                    <div class="input-field">                        <input id="search" type="search" placeholder="Buscar..." required name="q">                        <label class="label-icon" for="search"><img class="right" style="margin-top: 14px" src="dist/img/searchgreen.png"></label>                    </div>                </form>
+				</div>
+				<div class="col s2">
+					<a href="mensajes.html">
+						<span class="new badge">4</span>
+					</a>
+				</div>			
+				<div class="col s2">
+					<a href="#" data-activates="nav-mobile" class="button-collapse right"><img  src="dist/img/menuwhite.png" style="margin-top: 4px"></a>
+				</div>
+			</div>
+		</div>
+	</nav> 
+	
+<!--Content-->
+  <div class="container">
+    <div class="section">
+      <!--   Icon Section   -->
+		<div class="row">
+			<div class="credit">
+				<div class="col s12 m12">
+					<h1>Mi Credito</h1>			
+				</div>
+
+				<div class="col s12 m12 box">
+					<span class="monto">
+						<h2>Monto de mi credito:</h2>
+						<p>$500.000</p>
+					</span>
+					<span class="cuponera">
+						<h2>Número de cuponera:</h2>
+						<p>12345678-a</p>
+					</span>					
+				</div>
+
+				<div class="col s12 m12 box">
+					<span class="cuotas">
+						<h2>Número de cuotas pagadas / actual:</h2>
+						<p>6 cuotas</p>
+					</span>
+					<span class="cuponera">
+						<h2>Próximo vencimiento:</h2>
+						<p>28-04-2017</p>
+					</span>					
+				</div>
+
+				<div class="col s12 m12 box">
+					<span class="cuotas">
+						<h2>Microseguro Contratado:</h2>
+						<p>SI</p>
+					</span>
+					<span class="cuponera">
+						<h2>fecha estimada de recredito:</h2>
+						<p>01-05-2017</p>
+					</span>					
+				</div>				
+				
+			</div>	
+		</div>	
+    </div>
+    <br><br>	
+	
+  </div>
+
+<!--bottom-nav-->  
+<div id="bottom-nav">
+	<div class="section">
+		<div class="row">
+			<div class="col s3">
+				<a href="wall.html" class="inicio"></a>
+			</div>
+			<div class="col s3">
+				<a href="bazar.html" class="compra"></a>
+			</div>	
+			<div class="col s3">
+				<a href="publicar.html" class="publicar"></a>
+			</div>	
+			<div class="col s3">
+				<a href="feedback.html" class="credito active"></a>
+			</div>			
+		</div>	
+	</div>
+</div>	
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  </body>
+</html>

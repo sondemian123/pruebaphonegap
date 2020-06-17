@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+    <meta name="description" content="">
+    <meta name="author" content="">	
+	<meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff"> 
+	<title>Somos Fe | Fondo Esperanza</title>
+
+  <!-- CSS  -->
+  <link href="dist/css/materialfont.css" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900" rel="stylesheet">
+</head>
+<body>
+<!--Menu-->
+	<nav class="white" role="navigation">
+		<div class="nav-wrapper container">
+			<ul id="nav-mobile" class="side-nav">
+				<li>
+					<span class="perfil-photo">
+						<!--img src="img/user-demo-perfil-2.jpg" class="responsive-img circle" id='user_photo'-->
+						<p id='nombre_usuario'></p>
+					</span>
+					
+				</li>
+				<li><a href="#"><img  src="dist/img/perm_identity.png" class='newicon'> Perfil</a></li>
+				<li><a href="#"><img  src="dist/img/settings.png" class='newicon'> Cuenta</a></li>
+				<li><a href="#"><img  src="dist/img/vpn_key.png" class='newicon'> Privacidad</a></li>
+				<li><a href="logout.html"><img  src="dist/img/clear.png" class='newicon'> Cerrar Sesión</a></li>
+			</ul>
+			<div class="row">
+				<div class="col s8">
+					<form action="search.html" method="get">                    <div class="input-field">                        <input id="search" type="search" placeholder="Buscar..." required name="q">                        <label class="label-icon" for="search"><img class="right" style="margin-top: 14px" src="dist/img/searchgreen.png"></label>                    </div>                </form>
+				</div>
+				<div class="col s2">
+					<a href="mensajes.html">
+						<span class="new badge">4</span>
+					</a>
+				</div>			
+				<div class="col s2">
+					<a href="#" data-activates="nav-mobile" class="button-collapse right"><img  src="dist/img/menuwhite.png" style="margin-top: 4px"></a>
+				</div>
+			</div>
+		</div>
+	</nav> 
+	
+<!--Content-->
+  <div class="container">
+    <div class="section">
+      <!--   Icon Section   -->
+		<div class="row">
+			<div class="col s12 m12 publish-service">
+				<span class="user-name">
+					<div class="col s3 m3 zero-padding-l">
+						<span class="user-photo">
+							<img src="img/user-demo-4.png" class="responsive-img circle">
+						</span>
+					</div>
+					<div class="col s9 m9 zero-padding-l">
+						<h2>Daniela Muñoz</h2>
+						<span class="region">
+							<p>Lautaro, Región de la Araucanía</p>
+						</span>	
+					</div>
+				</span>			
+			</div>
+			<div class="col s12 m12 publish-prod">
+				<form>
+					<div class="input-field col s12 m12 zero-padding">
+						<input placeholder="¿Que ofreces?" id="que-ofreces" type="text" class="validate">
+					</div>
+					<div class="input-field col s12 m12 zero-padding">
+						<input placeholder="Agregar Precio" id="precio" type="text" class="validate">
+					</div>
+					<div class="input-field col s12 m12 zero-padding">
+						<textarea placeholder="Descripción" id="textarea1" class="materialize-textarea"></textarea>
+					</div>	
+					
+					<div class="col s7 m7 zero-padding-l">
+						<button class="waves-effect waves-light btn-large orange" type="submit" name="action"><i class="material-icons left">camera_enhance</i> Agregar Foto</button>
+						</div>
+					<div class="col s5 m5 zero-padding-l zero-padding-r">
+						<button class="waves-effect waves-light btn-large" type="submit" name="action">Publicar</button>
+					</div>					
+				</form>
+			</div>	
+		</div>	
+    </div>
+    <br><br>	
+	
+  </div>
+
+<!--bottom-nav-->  
+<div id="bottom-nav">
+	<div class="section">
+		<div class="row">
+			<div class="col s3">
+				<a href="wall.html" class="inicio"></a>
+			</div>
+			<div class="col s3">
+				<a href="buscar.html" class="compra active"></a>
+			</div>	
+			<div class="col s3">
+				<a href="publicar.html" class="publicar"></a>
+			</div>	
+			<div class="col s3">
+				<a href="feedback.html" class="credito"></a>
+			</div>			
+		</div>	
+	</div>
+</div>	
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  </body>
+</html>
